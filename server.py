@@ -6,7 +6,7 @@ def hello():
     data = json.loads(request.data)
     if data["type"] == "confirmation":
         return Response('a30166a3',status=200)
-    print(request)
+    print(data)
     return Response('ok',status=200)
 
 
