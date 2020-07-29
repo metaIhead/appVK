@@ -1,5 +1,3 @@
-# from flask import Flask
-# from flask import request
 from flask import *
 app = Flask(__name__)
 
@@ -8,6 +6,7 @@ def hello():
     data = json.loads(request.data)
     if data["type"] == "confirmation":
         return Response('a30166a3',status=200)
+    print(request)
     return Response('ok',status=200)
 
 
