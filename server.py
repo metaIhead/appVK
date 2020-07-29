@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello():
     data = json.loads(request.data)
     if data["type"] == "confirmation":
-        return Response('a30166a3',status=200)
+        return Response('',status=200)
     print(data)
     return Response('ok',status=200)
 
