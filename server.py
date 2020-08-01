@@ -1,5 +1,6 @@
 from flask import *
 import requests
+import os
 app = Flask(__name__)
 
 def create_new_lead(form_name,person_who_fill_form,form_answer):
@@ -7,7 +8,10 @@ def create_new_lead(form_name,person_who_fill_form,form_answer):
 
     payload = '[{"name": "'+form_name+'", "custom_fields_values": [{"field_id": 250045, "values": [{"value": "'+form_answer+'"}]}]}]'
 
+    token = os.environ.get('token', None)
+
     headers = {
+      'Authorization':token,
       'Content-Type': 'application/json',
       'Cookie': 'user_lang=ru; session_id=ett2uk796lqlfqffgfjpjctdutch86sa'
     }
