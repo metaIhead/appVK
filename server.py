@@ -10,7 +10,6 @@ def create_new_lead(form_name,person_who_fill_form,form_answer):
 
     headers = {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVmZjdkZWYyOWRlNzIxNTAzYmI3OTY5YTAwMjczMjQxMmFjMTA0ODIxZWNmZmYwZTVjOTM3NzM5YjE2YTM2MWJmMWZkOTg1MDYwOWYyZmZhIn0.eyJhdWQiOiJhMWNkMGU3Mi1mN2U0LTRlMjEtYTE0ZS00N2I5ZGExMjE2NWMiLCJqdGkiOiJlZmY3ZGVmMjlkZTcyMTUwM2JiNzk2OWEwMDI3MzI0MTJhYzEwNDgyMWVjZmZmMGU1YzkzNzczOWIxNmEzNjFiZjFmZDk4NTA2MDlmMmZmYSIsImlhdCI6MTU5NjI1ODI0MywibmJmIjoxNTk2MjU4MjQzLCJleHAiOjE1OTYzNDQ2NDMsInN1YiI6IjYxNzcxMDYiLCJhY2NvdW50X2lkIjoyODk2NjQxNywic2NvcGVzIjpbImNybSJdfQ.mlIs-HbIvKu4s_khAFi53c_kzsJan0mmI9RuDV3vKjxAJxGpLeGaLv5fP0eTqxyhV7L9VQY6qI7h3w1LRdX9-K2yPWiVEfqaWgyFQ5vvrmavG5tS3lxw4BHyD4Fuw6OFnTDQJTo_Tv0cCjGK27tV6D9tpBp3UyBnWorJcvWGw7c79pafdYEI-q70iAu5ipCBYZJ0XdxEBVcebGX7q9WQ8lYLtSf8qDChzThDc0f90l61H9-UrIDR8lh0wabyYY2OWh4L6itBVV_HLMgOWgS3Q5aB005ws7qq8XMkWnoxSKWDKGMIGQV0wUijhQts3HwXMc-zK65LZJ2fGxBJYE8Nqg',
       'Cookie': 'user_lang=ru; session_id=ett2uk796lqlfqffgfjpjctdutch86sa'
     }
     response = requests.request("POST", url, headers=headers, data = payload.encode('utf8'))
